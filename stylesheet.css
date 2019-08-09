@@ -26,7 +26,7 @@ a{
 	color: #f58b44;
 	padding: 0;
 	margin: 0;
-	font-size: 4.5vmax;
+	font-size: 7.8vw;
 	font-family: 'Red Hat Display', sans-serif;
 	font-weight: lighter;
 	text-align: center;
@@ -52,11 +52,11 @@ a{
 }
 
 .info h1{
-	font-size: 5.5vmin;
+	font-size: 5.5vw;
 }
 
 .info a{
-	font-size: 3.5vmin;
+	font-size: 3.2vw;
 	color: #f58b44;
 }
 
@@ -75,8 +75,9 @@ a{
 	border-bottom: solid;
 	height: 3vh;
 	width: 75%;
-	font-size: 4vmin;
+	font-size: 4vw;
 	margin-bottom: 7%;
+	outline: none;
 }
 
 .button {
@@ -88,7 +89,7 @@ a{
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 5.5vmin;
+	font-size: 5vmin;
 	margin: 20px 2px;
 	-webkit-transition-duration: 0.4s; /* Safari */
 	transition-duration: 0.4s;
@@ -104,4 +105,26 @@ a{
 .buttonA:hover {
   background-color: #f58b44;
   color: white;
+}
+
+@media only screen and (min-width: 1000px){
+	.header h1{
+		font-size: 80px;
+	}
+
+	.info h1{
+		font-size: 50px;
+	}
+
+	.info a{
+		font-size: 35px;
+	}
+
+	.field input{
+		font-size: 40px;
+	}
+
+	.button{
+		font-size: 50px;
+	}
 }
