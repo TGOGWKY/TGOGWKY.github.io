@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+:root{
+	--c1: #f4a460;
+	--c2: #6495ed;
+}
+
+
 body{
 	width: 100%;
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	background-color: #8ed1cd;
+	background-color: var(--c2);
 	font-size: 50px;
 }
 
@@ -13,7 +20,7 @@ a{
 	text-decoration: none;
 }
 
-.header{
+.all .entryBox .header{
 	width: 100%;
 	/* height: 127px; */
 	background-color: #fff;
@@ -22,56 +29,71 @@ a{
 	margin-bottom: 50px;
 }
 
-.header h1{
-	color: #f58b44;
-	padding: 0;
-	margin: 0;
-	font-size: 7.8vw;
+.all .entryBox .header h1{
+	color: var(--c1);
+	padding: 14px 40px;
+	margin: 40px 0px;
+	font-size: 9.8vw;
 	font-family: 'Red Hat Display', sans-serif;
 	font-weight: lighter;
 	text-align: center;
 	line-height: 100px;
+	border: 2px solid var(--c1);
 }
 
-.container{
+.all .entryBox .container{
 	display: flex;
 	justify-content: center;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	max-width: 1000px;
 }
 
-.content{
+.all .entryBox .container .contentLogin,
+.all .entryBox .container .contentSignup{
 	width: 85%;
 	height: auto;
-	border-radius: 10px;
+	border-radius: 5%;
 	background: white;
 }
 
-.info{
+.all .entryBox .container .contentLogin .info,
+.all .entryBox .container .contentSignup .info{
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: bold;
 	text-align: center;
 }
 
-.info h1{
+.all .entryBox .container .contentLogin .info h1,
+.all .entryBox .container .contentSignup .info h1{
 	font-size: 5.5vw;
+	color: var(--c1);
 }
 
-.info a{
+.all .entryBox .container .contentLogin .info a,
+.all .entryBox .container .contentSignup .info a{
 	font-size: 3.2vw;
-	color: #f58b44;
+	color: var(--c1);
+	font-weight: lighter;
+	text-decoration: underline;
 }
 
-.field{
+.all .entryBox .container .contentLogin .field,
+.all .entryBox .container .contentSignup .field{
 
 	margin: 25px auto;
 	text-align: center;
 }
 
-.field p{
+.all .entryBox .container .contentLogin .field p,
+.all .entryBox .container .contentSignup .field p{
 	margin: 0;
 }
 
-.field input{
+.all .entryBox .container .contentLogin .field input,
+.all .entryBox .container .contentSignup .field input{
 	border: none;
+	color: var(--c2);
 	border-bottom: solid;
 	height: 3vh;
 	width: 75%;
@@ -80,11 +102,9 @@ a{
 	outline: none;
 }
 
-.button {
+.all .entryBox .container .contentLogin .field .button,
+.all .entryBox .container .contentSignup .field .button{
 	font-family: 'Roboto Condensed', sans-serif;
-	background-color: #4CAF50; /* Green */
-	border: none;
-	color: red;
 	padding: 16px 32px;
 	text-align: center;
 	text-decoration: none;
@@ -96,35 +116,41 @@ a{
 	cursor: pointer;
 }
 
-.buttonA {
+.all .entryBox .container .contentLogin .field .buttonA,
+.all .entryBox .container .contentSignup .field .buttonA{
   background-color: white; 
-  color: #f58b44; 
-  border: 2px solid #f58b44;
+  color: var(--c1);
+  border: 2px solid var(--c1);;
 }
 
-.buttonA:hover {
-  background-color: #f58b44;
+.all .entryBox .container .contentLogin .field .buttonA:hover,
+.all .entryBox .container .contentSignup .field .buttonA:hover{
+  background-color: var(--c1);;
   color: white;
 }
 
 @media only screen and (min-width: 1000px){
-	.header h1{
+	.all .entryBox .header h1{
 		font-size: 80px;
 	}
 
-	.info h1{
+	.all .entryBox .container .contentLogin .info h1,
+	.all .entryBox .container .contentSignup .info h1{
 		font-size: 50px;
 	}
 
-	.info a{
+	.all .entryBox .container .contentLogin .info a,
+	.all .entryBox .container .contentSignup .info a{
 		font-size: 35px;
 	}
 
-	.field input{
+	.all .entryBox .container .contentLogin .field input,
+	.all .entryBox .container .contentSignup .field input{
 		font-size: 40px;
 	}
 
-	.button{
+	.all .entryBox .container .contentLogin .field .button,
+	.all .entryBox .container .contentSignup .field .button{
 		font-size: 50px;
 	}
 }
